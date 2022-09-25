@@ -1,7 +1,6 @@
 import random
 from Personality import Personality
 from Time import Time
-
 class Person:
     def __init__(self):
         self.status_life = ''
@@ -20,7 +19,6 @@ class Person:
         self.personality = []
         self.son = []
     time = Time()
-
     def looking_partner(self, population):
         for women in population:
             if women.marital_status == 'solteira' and women.age >= 18 and women.sex == 'FEMININO':
@@ -31,13 +29,11 @@ class Person:
                         women.partner = men.name
                         men.partner = women.name
         return population
-
     def makes_birthday(self, population):
         for person in population:
             if person.status_life == 'ativo':
                 person.age += 1
         return population
-
     def dies(self, population, current_date):
         for person in population:
             if person.age_death == person.age and person.status_life == 'ativo':
@@ -53,7 +49,6 @@ class Person:
                 die = words[index].upper()
                 person.cause_death = die
         return population
-
     def choose_name(self, sex):
         if sex == 'MASCULINO':
             arquivo = open("arquivos/male_names.txt", "r")
@@ -75,7 +70,6 @@ class Person:
             index = random.randrange(0, len(words))
             name = words[index].upper()
             return name
-
     def creates_personality(self, age):
         personality = Personality()
         profession = personality.define_profession()
@@ -88,7 +82,6 @@ class Person:
             personality = [' Sonho: '+ dream+ ' Gosta de : ' + sport]
 
         return personality
-
     def born(self,current_date, year_end):
         person = Person()
         person.sex = random.choice(self.sex)
@@ -99,6 +92,3 @@ class Person:
         person.status_life = 'ativo'
         person.age_death = random.randrange(18,110)
         return person
-
-
-
