@@ -1,1 +1,10 @@
-persolidadade.txt
+tem estilo de vida Ostentar
+tem estilo de vida minimalista
+tem estilo de vida pão duro
+tem estilo de vida materialista
+tem estilo de vida capitalista
+tem estilo de vida consumista
+tem estilo de vida livre
+tem estilo de vida hippie
+tem estilo de vida trabalhador
+tem estilo de vida pacata

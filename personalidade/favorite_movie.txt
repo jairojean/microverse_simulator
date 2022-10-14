@@ -1,1 +1,7 @@
-hobbies.txpersolidadade.txt
+Gosta de filme Comédia
+Gosta de filme Terror
+Gosta de filme Drama
+Gosta de filme Musical
+Gosta de filme Suspense
+Gosta de filme Romance
+Gosta de filme Policial

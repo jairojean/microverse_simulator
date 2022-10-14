@@ -1,1 +1,6 @@
-hobbies.txtpersolidadade.txt
+Não tem religião
+Religião evangelico
+Religião catolico
+Religião ateu
+Religião budista
+Religião hindu

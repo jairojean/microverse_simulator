@@ -1,0 +1,5 @@
+Uma pessoa Feliz
+Uma pessoa  Triste
+Uma pessoa  Motivada
+Uma pessoa Louca
+Uma pessoa Deprimida

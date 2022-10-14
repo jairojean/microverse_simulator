@@ -1,5 +1,10 @@
-Caminhoneiro
-Pedreito
-peão
-Medico
-motoboy
+Não tem profissão
+Profissão medico
+Profissão cientista
+Profissão politico
+Profissão empresario
+Profissão caminhoneiro
+Profissão pedreito
+Profissão peão
+Profissão motoboy
+Profissão professor
