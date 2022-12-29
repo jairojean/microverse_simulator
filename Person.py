@@ -18,7 +18,8 @@ class Person:
         self.personality = []
     time = Time()
 
-    def choose_name(self, sex):
+    @staticmethod
+    def choose_name(sex):
         if sex == 'MASCULINO':
             arquivo = open("arquivos/male_names.txt", "r")
             words = []
@@ -39,7 +40,8 @@ class Person:
             index = random.randrange(0, len(words))
             name = words[index].upper()
             return name
-    def creates_personality(self, population):
+    @staticmethod
+    def creates_personality(population):
         for person in population:
             if person.age >= 18:
                 personality = Personality()
@@ -58,13 +60,15 @@ class Person:
                 person.personality = ['Com essa idade esta desenvolvendo sua personalidade']
         return population
 
-    def makes_birthday(self, population):
+    @staticmethod
+    def makes_birthday(population):
         for person in population:
             if person.status_life == 'ativo':
                 person.age += 1
         return population
 
-    def dies(self, population, current_date):
+    @staticmethod
+    def dies(population, current_date):
         for person in population:
             if person.age_death == person.age and person.status_life == 'ativo':
                 person.death_date = current_date
@@ -82,7 +86,7 @@ class Person:
 
     def born(self,current_date,id):
         person = Person()
-        person.sex = random.choice(self.sex)
+        person.sex = random.choice(person.sex)
         person.name = self.choose_name(person.sex)
         person.birth_date = current_date
         person.id = id

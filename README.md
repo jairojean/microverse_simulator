@@ -1,4 +1,4 @@
-## Simulador da vida
+## Simulador do microverso
 
 Criei um pequeno universo simulado onde algumas coisas são decididas pela
 aleatoriedade, mas como em nosso universo esse também existe algumas condições para que as coisas aconteçam.
@@ -20,8 +20,8 @@ Você pode baixar e ditar suas regras, jogar ou não dados com esse universo.
 
 ##  Referencias e curiosidades que utilizei em meu universo
 Me inspirei em:
- - "Rick e Morthy" -  Episodio 3 da 6° temporada, no qual o cientista Rick cria seu pequeno universo na bateria de seu carro.
- - "Black Mirror" - Episodio X da X temporada, na qual existia um simulador que probabilidade de um casal ficarem juntos.
+ - "Rick e Morthy" -  Episodio 6 da 2° temporada, no qual o cientista Rick cria seu pequeno universo na bateria de seu carro.
+ - Hang the DJ (Black Mirror) - Episodio 4 da 4° temporada, na qual existe um simulador que verifica a probabilidade de um casal ficar junto, simulando e contabilizando os resultados.
 
 Outras referencias: 
 - O nome das doenças foram retiradas da musica "O pulso" da banda Titãs
