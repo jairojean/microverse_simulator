@@ -1,11 +1,11 @@
 class Match:
     @staticmethod
-    def looking_partner( population):
+    def looking_partner(population):
         level_match = 0
         for women in population:
-            if women.marital_status == 'solteira' and women.age >= 18 and women.sex == 'FEMININO':
+            if women.marital_status == 'solteira' and women.age >= 18 and women.gender == 'FEMININO':
                 for men in population:
-                    if men.marital_status == 'solteira' and men.age >= 18 and men.sex == 'MASCULINO':
+                    if men.marital_status == 'solteira' and men.age >= 18 and men.gender == 'MASCULINO':
                         for men_person in men.personality:
                             if men_person in women.personality:
                                 level_match += 1

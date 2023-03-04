@@ -11,8 +11,11 @@ Você pode baixar e ditar suas regras, jogar ou não dados com esse universo.
 ## Restrições desse universo
 
 - Somente maiores de 18 anos tem sua personalidade formada
-- Somente pessoas solteiras podem procurar parceiro
+- Somente Maiores de 18 anos estão sujeitos a morte
 - Somente se casa quem é maior de 18 anos
+- Somente pessoas solteiras podem procurar parceiro
+
+
 - So forma casal se tiverem 60% de personalidade compativel entre homem e mulher
 - As mulheres que escolhem os maridos (Pois cada Mulher olha para a lista de Homens solteiros maiores de 18 anos)
 

@@ -14,7 +14,7 @@ class Person:
         self.marital_status = 'solteira'
         self.partner = 'ninguém'
         self.id_partner = 0
-        self.sex = ['MASCULINO' , 'FEMININO']
+        self.gender = ['MASCULINO' , 'FEMININO']
         self.personality = []
     time = Time()
 
@@ -86,8 +86,8 @@ class Person:
 
     def born(self,current_date,id):
         person = Person()
-        person.sex = random.choice(person.sex)
-        person.name = self.choose_name(person.sex)
+        person.gender = random.choice(person.gender)
+        person.name = self.choose_name(person.gender)
         person.birth_date = current_date
         person.id = id
         person.age = 0
@@ -95,3 +95,5 @@ class Person:
         person.status_life = 'ativo'
         person.age_death = random.randrange(18,100)
         return person
+
+
