@@ -57,7 +57,7 @@ class Person:
                 flaws = personality.define_flaws()
                 person.personality = [profession,state_of_mind , religion , flaws, dream, hobbies, animal, sport, movie, life_style]
             else:
-                person.personality = ['Com essa idade esta desenvolvendo sua personalidade']
+                person.personality = [f'Com essa idade de {person.age} anos, ainda esta desenvolvendo sua personalidade']
         return population
 
     @staticmethod

@@ -66,16 +66,30 @@ class Report:
             f.write(lista_json)
     def Construindo_de_json_para_objeto():
         population = []
-        person = Person()
-        i = 0
         with open("simulation_report/simulation_population.json", "r") as arquivo:
             lista = json.load(arquivo)
             for item in lista:
+                person = Person()
+                person.id = item["id"]
+                person.status_life = item["status_life"]
                 person.name = item["name"]
+                person.gender = item["gender"]
+                person.birth_date = item["birth_date"]
+                person.age = item["age"]
+                person.age_death = item["age_death"]
+                person.marital_status = item["marital_status"]
+                person.death_date = item["death_date"]
+                person.cause_death = item["cause_death"]
+                person.id_partner = item["id_partner"]
+                person.partner = item["partner"]
+                person.personality = item["personality"]
                 population.append(person)
+        return population
 
-        for person in population:
-            print(person.name)
+
+
+
+
 
 
 

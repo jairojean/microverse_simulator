@@ -39,7 +39,6 @@ class Graphic:
         plt.xlabel('Doença')
         plt.ylabel('Quantidade')
         plt.show()
-
     def Graphic_morte_ao_longo_anos(population, anoinicio, anofim):
         data = []
         total = []
@@ -49,19 +48,13 @@ class Graphic:
             cont = 0
             for person in population:
                 if person.death_date == (anoinicio + anoAtual):
+                    print(person.name, person.death_date)
                     cont +=1
-            total.append(cont)
-            if cont != 0 :
-                data.append((anoinicio + anoAtual))
+                    total.append(cont)
+                    data.append((anoinicio + anoAtual))
             anoAtual += 1
-
-        print(totalanos)
-        print(total)
         plt.bar(data, total)
-        # Adiciona títulos e rótulos aos eixos
-        plt.title('Gráfico de linhas simples')
-        plt.xlabel('Eixo X')
-        plt.ylabel('Eixo Y')
-
-        # Exibe o gráfico
+        plt.title('Morte por ano')
+        plt.xlabel('Ano')
+        plt.ylabel('Quantidade de Mortes')
         plt.show()
