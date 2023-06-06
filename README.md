@@ -23,7 +23,7 @@ Você pode baixar e ditar suas regras, jogar ou não dados com esse universo.
 
 ##  Referencias e curiosidades que utilizei em meu universo
 Me inspirei em:
- - "Rick e Morthy" -  Episodio 6 da 2° temporada, no qual o cientista Rick cria seu pequeno universo na bateria de seu carro.
+ - "Rick e Morthy" -  Episodio 6 da 2° temporada, no qual o cientista Rick cria seu pequeno universo na bateria do seu carro.
  - Hang the DJ (Black Mirror) - Episodio 4 da 4° temporada, na qual existe um simulador que verifica a probabilidade de um casal ficar junto, simulando e contabilizando os resultados.
 
 Outras referencias: 

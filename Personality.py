@@ -3,7 +3,7 @@ class Personality:
 
     @staticmethod
     def define_profession():
-        file= open("personalidade/profession.txt", "r")
+        file= open("Build_personality/profession.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -15,7 +15,7 @@ class Personality:
 
     @staticmethod
     def define_dream():
-        file= open("personalidade/dream.txt", "r")
+        file= open("Build_personality/dream.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -27,7 +27,7 @@ class Personality:
 
     @staticmethod
     def define_favorite_sport():
-        file= open("personalidade/favorite_sport.txt", "r")
+        file= open("Build_personality/favorite_sport.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -39,7 +39,7 @@ class Personality:
 
     @staticmethod
     def define_favorite_movie():
-        file= open("personalidade/favorite_movie.txt", "r")
+        file= open("Build_personality/favorite_movie.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -51,7 +51,7 @@ class Personality:
 
     @staticmethod
     def define_hobbies():
-        file= open("personalidade/hobbies.txt", "r")
+        file= open("Build_personality/hobbies.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -63,7 +63,7 @@ class Personality:
 
     @staticmethod
     def define_life_style():
-        file= open("personalidade/life_style.txt", "r")
+        file= open("Build_personality/life_style.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -75,7 +75,7 @@ class Personality:
 
     @staticmethod
     def define_religion():
-        file = open("personalidade/religion.txt", "r")
+        file = open("Build_personality/religion.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -87,7 +87,7 @@ class Personality:
 
     @staticmethod
     def define_favorite_animal():
-        file = open("personalidade/favorite_animal.txt", "r")
+        file = open("Build_personality/favorite_animal.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -99,7 +99,7 @@ class Personality:
 
     @staticmethod
     def define_flaws():
-        file = open("personalidade/flaws.txt", "r")
+        file = open("Build_personality/flaws.txt", "r")
         words = []
         for line in file:
             line = line.strip()
@@ -111,7 +111,7 @@ class Personality:
 
     @staticmethod
     def define_state_of_mind():
-        file = open("personalidade/state_of_mind.txt", "r")
+        file = open("Build_personality/state_of_mind.txt", "r")
         words = []
         for line in file:
             line = line.strip()

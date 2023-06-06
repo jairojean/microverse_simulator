@@ -21,7 +21,7 @@ class Person:
     @staticmethod
     def choose_name(sex):
         if sex == 'MASCULINO':
-            arquivo = open("arquivos/male_names.txt", "r")
+            arquivo = open("file/male_names.txt", "r")
             words = []
             for line in arquivo:
                 line = line.strip()
@@ -31,7 +31,7 @@ class Person:
             name = words[index].upper()
             return name
         else:
-            arquivo = open("arquivos/female_names.txt", "r")
+            arquivo = open("file/female_names.txt", "r")
             words = []
             for line in arquivo:
                 line = line.strip()
@@ -40,6 +40,7 @@ class Person:
             index = random.randrange(0, len(words))
             name = words[index].upper()
             return name
+
     @staticmethod
     def creates_personality(population):
         for person in population:
@@ -73,7 +74,7 @@ class Person:
             if person.age_death == person.age and person.status_life == 'ativo':
                 person.death_date = current_date
                 person.status_life = 'Morte'
-                arquivo = open("arquivos/cause_death.txt", "r")
+                arquivo = open("file/cause_death.txt", "r")
                 words = []
                 for line in arquivo:
                     line = line.strip()
@@ -83,7 +84,6 @@ class Person:
                 die = words[index].upper()
                 person.cause_death = die
         return population
-
     def born(self,current_date,id):
         person = Person()
         person.gender = random.choice(person.gender)

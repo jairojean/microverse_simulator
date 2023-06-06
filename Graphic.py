@@ -1,4 +1,3 @@
-
 from matplotlib import pyplot as plt
 class Graphic:
     def Graphic_Gender_pie(population):
@@ -38,8 +37,8 @@ class Graphic:
         plt.title('Doença que mais matou')
         plt.xlabel('Doença')
         plt.ylabel('Quantidade')
-        plt.show()
-    def Graphic_morte_ao_longo_anos(population, anoinicio, anofim):
+        #plt.show()
+    def Graphic_death_over_years(population, anoinicio, anofim):
         data = []
         total = []
         anoAtual = 0
@@ -48,7 +47,7 @@ class Graphic:
             cont = 0
             for person in population:
                 if person.death_date == (anoinicio + anoAtual):
-                    print(person.name, person.death_date)
+                    print(f"Nome: {person.name} __Causa morte: {person.cause_death} __Ano: {person.death_date}")
                     cont +=1
                     total.append(cont)
                     data.append((anoinicio + anoAtual))
@@ -57,4 +56,5 @@ class Graphic:
         plt.title('Morte por ano')
         plt.xlabel('Ano')
         plt.ylabel('Quantidade de Mortes')
+        plt.savefig('view/Image/grafico.png')
         plt.show()

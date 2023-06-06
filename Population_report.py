@@ -3,7 +3,7 @@ import pandas as pd
 
 from Person import Person
 
-class Report:
+class Population_report:
     @staticmethod
     def Relat_individual(population):
         for person in population:
@@ -24,7 +24,7 @@ class Report:
     def Relat_history(population):
         for person in population:
             print('_________ Relatório individual dos cidadões _________')
-            print(f'De CPF: {person.id}, nascido em {person.birth_date}, {person.name}  é uma pessoa do sexo {person.gender} Teve como caracteristicas da personalidade  {person.personality}')
+            print(f'De CPF: {person.id}, nascido em {person.birth_date}, {person.name}  é uma pessoa do sexo {person.gender} Teve como caracteristicas da Build_personality  {person.personality}')
             print(f' que durante sua vida se relacionou com {person.partner} de cpf {person.id_partner} , sendo então uma pessoa {person.marital_status}')
             if person.status_life == 'Morte':
                 print(f'{person.name} morreu no ano de {person.death_date} aos {person.age_death} anos de idade de {person.cause_death}')
@@ -35,7 +35,7 @@ class Report:
     def who_married(population):
         for person in population:
             if person.marital_status == 'Casado' or person.marital_status == 'Casada':
-                print(f" Cpf: {person.id}  {person.name} com a personalidade  {person.personality} \n casou com {person.partner} de CPF {person.id_partner}" )
+                print(f" Cpf: {person.id}  {person.name} com a Build_personality  {person.personality} \n casou com {person.partner} de CPF {person.id_partner}" )
     @staticmethod
     def deadly_disease(population):
         illness = []
@@ -58,34 +58,6 @@ class Report:
             print(f'A Doença {cause_death} Matou {cont} vezes.')
         print(f'A doença que mais matou foi a {deadly} matou {larger} Vezes.')
         print(f'Total de mortes nessa simulação {dead_people}.')
-
-    @staticmethod
-    def Construindo_de_objeto_pra_json(population):
-        lista_json = json.dumps(population, default=lambda x: x.__dict__)
-        with open('simulation_report/simulation_population.json', 'a') as f:
-            f.write(lista_json)
-    def Construindo_de_json_para_objeto():
-        population = []
-        with open("simulation_report/simulation_population.json", "r") as arquivo:
-            lista = json.load(arquivo)
-            for item in lista:
-                person = Person()
-                person.id = item["id"]
-                person.status_life = item["status_life"]
-                person.name = item["name"]
-                person.gender = item["gender"]
-                person.birth_date = item["birth_date"]
-                person.age = item["age"]
-                person.age_death = item["age_death"]
-                person.marital_status = item["marital_status"]
-                person.death_date = item["death_date"]
-                person.cause_death = item["cause_death"]
-                person.id_partner = item["id_partner"]
-                person.partner = item["partner"]
-                person.personality = item["personality"]
-                population.append(person)
-        return population
-
 
 
 

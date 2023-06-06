@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Página HTML com Imagens e Tabela</title>
+    <style>
+        body {
+            background-color: #f1f1f1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 300px;
+            height: auto;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            margin: 0 10px;
+        }
+
+        .center-image {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .center-image img {
+            max-width: 600px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Página HTML com Imagens e Tabela</h1>
+
+        <div class="center-image">
+            <img src="Image/grafico.png" alt="Imagem 3">
+        </div>
+
+        <div class="image-container">
+            <img src="Image/grafico.png" alt="Imagem 1">
+            <img src="Image/grafico.png" alt="Imagem 2">
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Coluna 1</th>
+                    <th>Coluna 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dado 1</td>
+                    <td>Dado 2</td>
+                </tr>
+                <tr>
+                    <td>Dado 3</td>
+                    <td>Dado 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

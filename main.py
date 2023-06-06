@@ -1,11 +1,12 @@
 from Person import Person
 from Match import Match
 from Time import Time
-from Report import Report
+import Population_report
+from Json_build import Json_build
 from Graphic import Graphic
 
 if __name__ == "__main__":
-    start = True
+    start = False
     time = Time()
     time.start_year = 2000
     time.current_year = time.start_year
@@ -25,18 +26,18 @@ if __name__ == "__main__":
             id += 1
             time.current_year += 1
 # Manipulando Jsons
-    #Report.Construindo_de_objeto_pra_json(population)
-    #population = Report.Construindo_de_json_para_objeto()
+    #population = Json_build.build_object_to_json()
+    population = Json_build.build_json_to_object()
 
 # Relatórios
-    #Report.Relat_history(population)
-    #Report.deadly_disease(population)
-    #Report.who_married(population)
-    Report.Relat_individual(population)
+    #Population_report.Relat_history(population)
+    #Population_report.deadly_disease(population)
+    #Population_report.who_married(population)
+    #Population_report.Relat_individual(population)
 
 # Gráficos
     #Graphic.Graphic_deadly_disease_bar(population)
     #Graphic.Graphic_Gender_pie(population)
-    #Graphic.Graphic_morte_ao_longo_anos(population,time.start_year,time.end_world)
+    Graphic.Graphic_death_over_years(population,time.start_year,time.end_world)
 
 
