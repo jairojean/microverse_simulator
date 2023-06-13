@@ -1,14 +1,15 @@
 import json
 from Person import Person
-class Json_build:
+class json_config:
     @staticmethod
     def build_object_to_json(population):
         lista_json = json.dumps(population, default=lambda x: x.__dict__)
-        with open('file_population/simulation_population.json', 'a') as f:
+        with open('File_population/simulation_population.json', 'a') as f:
             f.write(lista_json)
+            print("Chegou aqui")
     def build_json_to_object():
         population = []
-        with open("file_population/simulation_population.json", "r") as arquivo:
+        with open("File_population/simulation_population.json", "r") as arquivo:
             lista = json.load(arquivo)
             for item in lista:
                 person = Person()

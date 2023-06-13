@@ -1,103 +1,96 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Página HTML com Imagens e Tabela</title>
+    <title>Página Hacker com Gráficos</title>
     <style>
         body {
-            background-color: #f1f1f1;
-            font-family: Arial, sans-serif;
+            background-color: #000;
+            font-family: 'Courier New', monospace;
+            color: #0f0;
             margin: 0;
-            padding: 20px;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 0; /* Removendo as margens */
         }
 
         h1 {
             text-align: center;
-            color: #333;
+            color: #0f0;
         }
 
-        .image-container {
+        .charts-container {
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
+            align-items: flex-start;
             margin-bottom: 20px;
         }
 
-        img {
-            max-width: 300px;
-            height: auto;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-            margin: 0 10px;
+        .chart {
+            width: 500px;
+            height: 400px;
+            margin: 20px;
+            border: 2px solid #0f0;
+            border-radius: 5px;
+            background-color: #111;
+            padding: 20px;
+            box-sizing: border-box;
+            overflow: hidden;
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
         }
 
-        .center-image {
+        .full-width-chart {
+            width: 100vw; /* Largura em relação à largura total da viewport */
+            max-width: 100%; /* Garantindo que não ultrapasse a largura máxima da imagem */
+        }
+
+        .button-container {
             display: flex;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-top: 20px;
         }
 
-        .center-image img {
-            max-width: 600px;
+        .button {
+            background-color: #0f0;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
         }
 
-        table {
-            width: 100%;
-            border-collapse: collapse;
-        }
-
-        th, td {
-            border: 1px solid #ddd;
-            padding: 12px;
-            text-align: left;
-        }
-
-        th {
-            background-color: #f9f9f9;
-            font-weight: bold;
-        }
-
-        tr:nth-child(even) {
-            background-color: #f1f1f1;
+        .button:hover {
+            background-color: #090;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Página HTML com Imagens e Tabela</h1>
-
-        <div class="center-image">
-            <img src="Image/grafico.png" alt="Imagem 3">
+    <h1>Monitoramento Microverso</h1>
+      <div class="button-container">
+        <button class="button"><a href="index.html">Inicio</a></button>
+        <button class="button"><a href="population_table.html">Tabela População</a></button>
+    </div>
+    <div class="chart full-width-chart">
+            <img src="Image/Graphic_death_over_years.png" alt="Gráfico 3" style="width: 90%; height: 90%;  object-position: center;">
+        </div>
+    <div class="charts-container">
+        <div class="chart">
+            <img src="Image/Graphic_status_life.png" alt="Gráfico 2" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="chart">
+            <img src="Image/Graphic_deadly_disease_bar.png" alt="Gráfico 2" style="max-width: 100%; height: auto;">
+        </div>
+         <div class="chart">
+            <img src="Image/Graphic_Gender_pie.png" alt="Gráfico 1" style="max-width: 100%; height: auto;">
+        </div>
+        <div class="chart">
+            <img src="Image/Graphic_marital_status.png" alt="Gráfico 2" style="max-width: 100%; height: auto;">
         </div>
 
-        <div class="image-container">
-            <img src="Image/grafico.png" alt="Imagem 1">
-            <img src="Image/grafico.png" alt="Imagem 2">
-        </div>
-
-        <table>
-            <thead>
-                <tr>
-                    <th>Coluna 1</th>
-                    <th>Coluna 2</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Dado 1</td>
-                    <td>Dado 2</td>
-                </tr>
-                <tr>
-                    <td>Dado 3</td>
-                    <td>Dado 4</td>
-                </tr>
-            </tbody>
-        </table>
     </div>
 </body>
 </html>
+

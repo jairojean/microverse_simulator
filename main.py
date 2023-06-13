@@ -1,8 +1,8 @@
 from Person import Person
 from Match import Match
 from Time import Time
-import Population_report
-from Json_build import Json_build
+from Population_report import Population_report
+from Json_build import json_config
 from Graphic import Graphic
 
 if __name__ == "__main__":
@@ -15,6 +15,7 @@ if __name__ == "__main__":
     person = Person()
     match = Match()
     id = 1
+
     #  Inicio ao Fim do mundo
     if start == True:
         while time.current_year <= time.end_world:
@@ -26,8 +27,9 @@ if __name__ == "__main__":
             id += 1
             time.current_year += 1
 # Manipulando Jsons
-    #population = Json_build.build_object_to_json()
-    population = Json_build.build_json_to_object()
+    #json_config.build_object_to_json(population)
+    population = json_config.build_json_to_object()
+
 
 # Relatórios
     #Population_report.Relat_history(population)
@@ -36,8 +38,10 @@ if __name__ == "__main__":
     #Population_report.Relat_individual(population)
 
 # Gráficos
-    #Graphic.Graphic_deadly_disease_bar(population)
-    #Graphic.Graphic_Gender_pie(population)
-    Graphic.Graphic_death_over_years(population,time.start_year,time.end_world)
 
+    Graphic.Graphic_deadly_disease_bar(population)
+    Graphic.Graphic_Gender_pie(population)
+    Graphic.Graphic_death_over_years(population,time.start_year,time.end_world)
+    Graphic.Graphic_marital_status(population)
+    Graphic.Graphic_status_life(population)
 

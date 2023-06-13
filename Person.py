@@ -21,7 +21,7 @@ class Person:
     @staticmethod
     def choose_name(sex):
         if sex == 'MASCULINO':
-            arquivo = open("file/male_names.txt", "r")
+            arquivo = open("File/male_names.txt", "r")
             words = []
             for line in arquivo:
                 line = line.strip()
@@ -31,7 +31,7 @@ class Person:
             name = words[index].upper()
             return name
         else:
-            arquivo = open("file/female_names.txt", "r")
+            arquivo = open("File/female_names.txt", "r")
             words = []
             for line in arquivo:
                 line = line.strip()
@@ -74,7 +74,7 @@ class Person:
             if person.age_death == person.age and person.status_life == 'ativo':
                 person.death_date = current_date
                 person.status_life = 'Morte'
-                arquivo = open("file/cause_death.txt", "r")
+                arquivo = open("File/cause_death.txt", "r")
                 words = []
                 for line in arquivo:
                     line = line.strip()

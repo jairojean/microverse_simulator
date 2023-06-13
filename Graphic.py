@@ -10,9 +10,50 @@ class Graphic:
             else:
                 Women += 1
         data = [Men,Women]
-        print(f"Homens: {Men}  Mulheres: {Women}")
+       # print(f"Homens: {Men}  Mulheres: {Women}")
+        plt.title('Homens e Mulheres na simulação')
         plt.pie(data, labels= gender)
+        plt.savefig('view/Image/Graphic_Gender_pie.png')
         plt.show()
+
+    def Graphic_marital_status(population):
+        marital_status = "Casado", "Solteiros"
+        single = 0
+        married = 0
+        for person in population:
+            if person.marital_status == 'Casado' or person.marital_status == 'Casada':
+                married += 1
+            else:
+                single += 1
+        data = [married, single]
+        # print(f"Casados: {married}  Solteiros: {single}")
+        plt.title('Estado Civil da população')
+        plt.pie(data, labels=marital_status)
+        plt.savefig('view/Image/Graphic_marital_status.png')
+        plt.show()
+
+    def Graphic_status_life(population):
+        status_life = "Vivos", "Mortos"
+        alive = 0
+        dead = 0
+        for person in population:
+            if person.status_life == 'ativo':
+                alive += 1
+            else:
+                dead += 1
+        data = [alive, dead]
+        # print(f"Casados: {married}  Solteiros: {single}")
+        plt.title('Vivos e mortos da população')
+        plt.bar(status_life, data)
+        plt.xlabel('Status')
+        plt.ylabel('Quantidade')
+        plt.savefig('view/Image/Graphic_status_life.png')
+        plt.show()
+
+
+
+
+
     def Graphic_deadly_disease_bar(population):
         illness = []
         list_cause_death = []
@@ -29,15 +70,16 @@ class Graphic:
                     dead_people += 1
                     if person.cause_death == cause_death:
                         cont += 1
-            if cont != 1:
+            if cont != 1 and cont != 2:
                 list_cause_death.append(cause_death)
                 list_quanti.append(cont)
-                print(f'A Doença {cause_death} Matou {cont} vezes.')
+              #  print(f'A Doença {cause_death} Matou {cont} vezes.')
         plt.bar(list_cause_death,list_quanti)
         plt.title('Doença que mais matou')
         plt.xlabel('Doença')
         plt.ylabel('Quantidade')
-        #plt.show()
+        plt.savefig('view/Image/Graphic_deadly_disease_bar.png')
+        plt.show()
     def Graphic_death_over_years(population, anoinicio, anofim):
         data = []
         total = []
@@ -47,7 +89,7 @@ class Graphic:
             cont = 0
             for person in population:
                 if person.death_date == (anoinicio + anoAtual):
-                    print(f"Nome: {person.name} __Causa morte: {person.cause_death} __Ano: {person.death_date}")
+                   # print(f"Nome: {person.name} __Causa morte: {person.cause_death} __Ano: {person.death_date}")
                     cont +=1
                     total.append(cont)
                     data.append((anoinicio + anoAtual))
@@ -56,5 +98,5 @@ class Graphic:
         plt.title('Morte por ano')
         plt.xlabel('Ano')
         plt.ylabel('Quantidade de Mortes')
-        plt.savefig('view/Image/grafico.png')
+        plt.savefig('view/Image/Graphic_death_over_years.png')
         plt.show()
