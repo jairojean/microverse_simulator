@@ -17,7 +17,6 @@ class Person:
         self.gender = ['MASCULINO' , 'FEMININO']
         self.personality = []
     time = Time()
-
     @staticmethod
     def choose_name(sex):
         if sex == 'MASCULINO':
@@ -40,7 +39,6 @@ class Person:
             index = random.randrange(0, len(words))
             name = words[index].upper()
             return name
-
     @staticmethod
     def creates_personality(population):
         for person in population:
@@ -60,14 +58,12 @@ class Person:
             else:
                 person.personality = [f'Com essa idade de {person.age} anos, ainda esta desenvolvendo sua personalidade']
         return population
-
     @staticmethod
     def makes_birthday(population):
         for person in population:
             if person.status_life == 'ativo':
                 person.age += 1
         return population
-
     @staticmethod
     def dies(population, current_date):
         for person in population:
@@ -95,5 +91,3 @@ class Person:
         person.status_life = 'ativo'
         person.age_death = random.randrange(18,100)
         return person
-
-

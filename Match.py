@@ -18,5 +18,3 @@ class Match:
                                     men.id_partner = women.id
                         level_match = 0
         return population
-
-

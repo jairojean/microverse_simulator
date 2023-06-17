@@ -1,6 +1,6 @@
-## Simulador do microverso
+## Simulador  Microverso
 
-Criei um pequeno universo simulado onde algumas coisas são decididas pela
+Criei um pequeno universo simulado, onde algumas coisas são decididas pela
 aleatoriedade, mas como em nosso universo esse também existe algumas condições para que as coisas aconteçam.
 
 Nesse universo as pessoas casam ou não, tem sonhos ou não, gostam de algumas coisas ou não. Aos poucos
@@ -16,7 +16,7 @@ Você pode baixar e ditar suas regras, jogar ou não dados com esse universo.
 - Somente pessoas solteiras podem procurar parceiro
 
 
-- So forma casal se tiverem 60% de personalidade compativel entre homem e mulher
+- Só forma casal se tiverem 60% de personalidade compativel entre homem e mulher
 - As mulheres que escolhem os maridos (Pois cada Mulher olha para a lista de Homens solteiros maiores de 18 anos)
 
 
